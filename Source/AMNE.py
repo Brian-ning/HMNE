@@ -74,8 +74,8 @@ class train_model:
             with open(path, 'rb') as f:
                 mul_nets, _, pos_edge_list, neg_edge_list, nodes_attr = pk.load(f)
         else:
-            file_path = "./Sampling_graph/Datasets_With_Attributes/"+ os.path.basename(self.path) + ".graph"
-            mul_nets, _, pos_edge_list, neg_edge_list, nodes_attr = Reader.data_load(file_path)
+            file_path = "./Sampling_graph/Datasets_With_Attributes/Graph/"+ os.path.basename(self.path) + ".graph"
+            mul_nets, pos_edge_list, neg_edge_list, nodes_attr = Reader.data_load(file_path)
         nodes_prob = clw.RWGraph(mul_nets) # 加载节点局部信息互补性的采样度量
         nodes_mat = np.zeros((mul_nets[0].number_of_nodes(), len(mul_nets)*len(mul_nets)))
         for n in sorted(list(mul_nets[0].nodes())):

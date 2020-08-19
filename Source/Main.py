@@ -21,11 +21,11 @@ class Parakeyward:
 
 # The main function for code
 if __name__ == "__main__":
-    file = ['PP'] # "CKM", "ArXiv"
+    file = ['CKM'] # "CKM", "ArXiv"
     dimension = 128
     datasets_len = len(file)
     sampling = 0.8
-    run_flag = 'compare'#'compare'#'train'#'test'#
+    run_flag = 'train'#'compare'#'train'#'test'#
     for i in range(datasets_len):
         print("------------------%s------------------"%file[i])
         path = "pickle/" + file[i]

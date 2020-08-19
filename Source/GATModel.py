@@ -97,7 +97,7 @@ class Net(torch.nn.Module):
         # 每一层网络都需要计算目标函数
         for i in range(self.number_graphs):
             # en_de_obj = torch.norm(pre_feat[i]-h_1_all[i], p=2) + torch.norm(encoder_H[i]-decov1_f[i], p=2) + torch.norm(conv1_f[i]-decov2_f[i], p=2)
-            en_de_obj = torch.norm(pre_feat[i]-h_1_all[i], p=2) + torch.norm(conv1_f[i]-decov1_f[i], p=2)
+            en_de_obj = torch.norm(pre_feat[i] - h_1_all[i], p=2) + torch.norm(conv1_f[i] - decov1_f[i], p=2)
             obf1 = obf1 + torch.div(en_de_obj,2)
             for j in range(self.number_graphs):
                 if i!=j:

@@ -48,8 +48,8 @@ def data_load(path):
             _pos_edge_list = [(int(e[0]), int(e[1])) for e in _pos_edge_list if int(e[0]) in nodes_list and int(e[1]) in nodes_list]
             _neg_edge_list = [(int(e[0]), int(e[1])) for e in _neg_edge_list if int(e[0]) in nodes_list and int(e[1]) in nodes_list]
 
-        merge_graph = merge_g(multi_digraphs)
-        return multi_digraphs, merge_graph, _pos_edge_list, _neg_edge_list, attr_dict
+        # merge_graph = merge_g(multi_digraphs)
+        return multi_digraphs, _pos_edge_list, _neg_edge_list, attr_dict
 
 
 def GKdata_load(LG, _pos_edge_list, _neg_edge_list):
