@@ -11,10 +11,12 @@ nodes. In the global embedding phase, we present a global autoencoder structure 
 layers. Moreover, it can also quantify the dependence of node’s structure formation on node attribute information in each layer of the network.
 
 ## Requirements
-Python 3.6
-Pytorch 1.5.0 + CPU
-Pytorch_geometric 1.5.0
-
+* Python 3.6
+* Pytorch 1.5.0 + CPU
+* Pytorch_geometric 1.5.0
+* nummpy
+* pickle
+* netwrokx
 ## Running The Code and Input Format
 
   ```Python Main.py```
@@ -22,10 +24,13 @@ Pytorch_geometric 1.5.0
 ## Parameters in Main.py are seted by Manual Maner
 
 * ```run_flag = 'train'```
+
 This code will be used to perform the **training** process.
 
 * ```run_flag = 'test'```
+
 This code will be used to perform the **testing** process.
 
 * ```run_flag = 'compare'```
+
 This code will be used to perform the **Baseline Methods**.
