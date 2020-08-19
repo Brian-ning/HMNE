@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
-* text=python
+# * text=python
+*.py linguist-language=python
+*.txt linguist-language=python
+*.pk linguist-language=python
