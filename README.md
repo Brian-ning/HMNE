@@ -17,11 +17,11 @@ Pytorch_geometric 1.5.0
 
 ## Running The Code and Input Format
 
-  'Python Main.py'
+  '''Python Main.py'''
 
 ## Parameters in Main.py are seted by Manual Maner
 
-  '''<run_flag = 'train'
+  '''run_flag = 'train'
 This code will be used to perform the **training** process.
 
   '''run_flag = 'test'
